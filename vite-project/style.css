@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @layer components {
+  .calc {
+      background-image: url(img/van.jpg) ;
+  }
+}
+
+button {
+    @apply bg-[#02205F] w-[50px] h-[50px] text-[25px] border-none m-[2px] rounded
+}
+button:hover {
+    @apply bg-[#F7CA37]
+}

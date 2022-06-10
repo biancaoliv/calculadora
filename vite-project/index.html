@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body class="bg-gradient-to-l from-sky-500 to-indigo-500 font-pop">
+    <div class="h-full text-white">
+      <h1 class="text-center">Bianca Oliveira</h1>
+      <div class="calc absolute bg-black top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] rounded-xl p-[15px]">
+        <h1 class="text-center text-[28px]">Calculadora</h1>
+        <p id="resultado" class="w-[216px] bg-white h-[36px] m-[5px] text-[25px] text-[#F7CA37] text-right	rounded"></p>
+        <table>
+          <tr>
+            <td><button>C</button></td>
+            <td><button>&lt;</button></td>
+            <td><button>/</button></td>
+            <td><button>X</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td><button onclick="insert('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td><button onclick="insert('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button class="h-[106px]">=</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button class="w-[106px]">0</button></td>
+            <td><button>.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
